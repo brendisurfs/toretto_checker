@@ -8,15 +8,22 @@ console.log(passwordInput.value);
 // send to server to check for Family
 const submitChecker = async (e) => {
     e.preventDefault();
+    
     let inputString = passwordInput.value;
-    let checkedPassword = await axios.post(serverURL, inputString);
-    let percentFamily = checkedPassword.data * 100;
-    familyPrint.innerText = `Your password is ${percentFamily}% Family.`;
+    
+    if (inputString != "") {
 
+        let checkedPassword = await axios
+        .post(serverURL, inputString);
+        let percentFamily = checkedPassword.data * 100;
+        familyPrint.innerText = `Your password is ${percentFamily}% Family.`;
+        passwordInput.value = "";
+        
+    } else {
+        alert("please enter a valid password string");
+    }
 }
 
 submitForm.addEventListener("submit", submitChecker);
-// clear input
-passwordInput.innerText = "";
 
 
