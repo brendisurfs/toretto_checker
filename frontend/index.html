@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toretto Checker</title>
+</head>
+<body>
+    <h1>Check your password for Family</h1>
+    <div class="container">
+        <form id="submit-form" action="submit">
+            <label for="password">Check your password</label>
+            <input name="password" type="text" id="password-input">
+            <br>
+            <label for="submit-btn">submit</label>
+            <input id="submit-btn" type="submit">
+        </form>
+        <div class="container">
+            <div class="content">
+                <p id="family-print"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
