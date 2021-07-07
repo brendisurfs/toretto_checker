@@ -10,5 +10,6 @@ This isn't just about making sure your password is safe, its about Family.
 
 - Password hashing from front to back. 
 - Migrate frontend to React.
+- Dockerize backend.
 
 ***this is very much in alpha stages***
