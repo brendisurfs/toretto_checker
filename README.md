@@ -9,7 +9,6 @@ This isn't just about making sure your password is safe, its about Family.
 ## Future Features
 
 - Password hashing from front to back. 
-- UI update.
-
+- Migrate frontend to React.
 
 ***this is very much in alpha stages***
