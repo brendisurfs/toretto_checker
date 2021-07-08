@@ -1,0 +1,6 @@
+FROM golang
+WORKDIR /Users/brendiboi/Dev/github/github_toretto_checker/backend
+ADD . ./
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix . 
+EXPOSE 4000
+ENTRYPOINT ../backend
