@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toretto Checker</title>
+</head>
+<body>
+    <h1>Check your password for Family</h1>
+    <div class="container">
+
+        <!-- Family Password Form -->
+        <form id="submit-form" action="submit">
+            <label for="password">Check your password</label>
+            <input name="password" type="text" id="password-input">
+            <br>
+            <label for="submit-btn">submit</label>
+            <input id="submit-btn" type="submit">
+        </form>
+
+        <!-- output container -->
+        <div class="container">
+            <div class="content">
+                <p id="family-print"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="6e494733dcb9259f3bc6801e9dc00c76"></script>
+    <script src="4446f5e227c2c938d062e7ce10c1adbe"></script>
+</body>
+</html>
