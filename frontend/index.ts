@@ -1,13 +1,11 @@
-import { FormatInputPathObject } from 'path/posix'
-
-const axios = require("axios");
+import axios, {AxiosRequestConfig, AxiosResponse} from "axios";
 
 const serverURL = "http://localhost:4000/check";
 
 let passwordInput = <HTMLInputElement>document.getElementById("password-input");
 const submitForm = document.getElementById("submit-form");
 const familyPrint = document.getElementById("family-print");
-console.log(passwordInput.value);
+
 // send to server to check for Family
 const submitChecker = async (e: Event) => {
     e.preventDefault();
