@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css'>
     <title>Toretto Checker</title>
 </head>
-<body>
-    <h1>Check your password for Family</h1>
+<body class="column">
     <div class="container">
+        <div class="hero">
+            <h1 class="title">Check your password for Family</h1>
+        </div>
 
         <!-- Family Password Form -->
-        <form id="submit-form" action="submit">
-            <label for="password">Check your password</label>
-            <input name="password" type="password" id="password-input">
-            <br>
-            <label for="submit-btn">submit</label>
-            <input id="submit-btn" type="submit">
-        </form>
-
-        <!-- output container -->
         <div class="container">
+            <form class="box" id="submit-form" action="submit">
+                <div class="field">
+                    <label class="label" for="password">Check your password</label>
+                    <input name="password" type="password" id="password-input">
+                </div>
+                <div class="field">
+                    <button class="button is-primary" id="submit-btn" type="submit">Check</button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- output container -->
+        <div class="card">
             <div class="content">
                 <p id="family-print"></p>
+                <div id="family-card"></div>
             </div>
         </div>
     </div>
